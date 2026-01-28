@@ -24,7 +24,7 @@ const imagenes = [
 export default function WorksComp() {
   return (
     <div className="pt-[100px] pb-[150px]">
-      <div className="flex flex-col items-center px-4">
+      <div data-aos="fade-up" className="flex flex-col items-center px-4">
         <Image
           src="/icons-work/trabajo.png"
           width={75}
@@ -40,6 +40,7 @@ export default function WorksComp() {
       <div className="flex flex-col justify-center items-center flex-wrap gap-[22px] pt-[70px] px-8 lg:flex-row">
         {imagenes?.map((item, index) => (
           <a
+            data-aos="fade-up"
             key={index}
             href={item.link}
             target="_blank"

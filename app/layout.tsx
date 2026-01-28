@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Montserrat, Outfit, Manrope } from "next/font/google";
 import "./globals.css";
+import AOSProvider from "./AosProvider";
 
 const geistSans = Montserrat({
   variable: "--font-geist-sans",
@@ -38,6 +39,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${geistPoppins.variable} ${geistManrope.variable} antialiased`}
       >
+        <AOSProvider />
         {children}
       </body>
     </html>

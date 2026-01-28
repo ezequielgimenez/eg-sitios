@@ -32,11 +32,17 @@ export default function ServiciosComp() {
     <div className="bg-[#E8E8E8] py-[70px]">
       {/* Header */}
       <div className="flex flex-col items-center px-8">
-        <h3 className="font-sans font-extrabold text-[#121212] text-[44px] text-center">
+        <h3
+          data-aos="fade-up"
+          className="font-sans font-extrabold text-[#121212] text-[44px] text-center"
+        >
           ¿Qué Ofrecemos?
         </h3>
         <div className="bg-[#AF254F] w-[80px] h-[4px]" />
-        <p className="font-mono text-[#666666] text-[18px] text-center font-light pt-[10px]">
+        <p
+          data-aos="fade-up"
+          className="font-mono text-[#666666] text-[18px] text-center font-light pt-[10px]"
+        >
           Brindamos diferentes servicios y soluciones web pensadas para cubrir
           las necesidades de tu proyecto.
         </p>
@@ -46,6 +52,7 @@ export default function ServiciosComp() {
       <div className="flex justify-center flex-wrap gap-[32px] pt-[73px] px-8">
         {content.map((item, index) => (
           <div
+            data-aos="fade-up"
             key={index}
             className="
               group
@@ -90,7 +97,10 @@ export default function ServiciosComp() {
       </div>
 
       {/* Background */}
-      <div className="relative flex justify-center pt-[70px] px-2">
+      <div
+        data-aos="fade-up"
+        className="relative flex justify-center pt-[70px] px-2"
+      >
         <Image
           src="/icons/background.png"
           width={1200}
