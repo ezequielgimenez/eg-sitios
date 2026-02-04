@@ -23,7 +23,7 @@ const imagenes = [
 
 export default function WorksComp() {
   return (
-    <div className="pt-[100px] pb-[250px]">
+    <div id="trabajos" className="pt-[100px] pb-[250px]">
       <div data-aos="fade-up" className="flex flex-col items-center px-4">
         <Image
           src="/icons-work/trabajo.png"

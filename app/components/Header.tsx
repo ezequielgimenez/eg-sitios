@@ -25,7 +25,7 @@ export default function HeaderComp() {
       },
       {
         threshold: 0.6, // cuánto debe verse para activarse
-      }
+      },
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -107,7 +107,7 @@ export default function HeaderComp() {
         </Link>
         <Link
           className="py-8 text-[22px] font-sans font-semibold text-white drop-shadow-[0px_0px_5px_rgba(197,75,140,1)]"
-          href="/#sobre"
+          href="/#acercade"
           onClick={openNav}
         >
           SOBRE EG SITIOS
@@ -154,7 +154,7 @@ export default function HeaderComp() {
             <li>
               <Link
                 className="font-nav font-normal text-[#E5E7EB] text-[14px] cursor-pointer hover:text-[#AF254F]/75 transition-colors duration-500 ease-in-out"
-                href="/#sobre-mi"
+                href="/#servicios"
               >
                 SERVICIOS
               </Link>
@@ -162,7 +162,7 @@ export default function HeaderComp() {
             <li>
               <Link
                 className="font-nav font-normal text-[#E5E7EB] text-[14px] cursor-pointer hover:text-[#AF254F]/75 transition-colors duration-500 ease-in-out"
-                href="/#recetarios"
+                href="/#acercade"
               >
                 SOBRE EG SITIOS
               </Link>
@@ -171,7 +171,7 @@ export default function HeaderComp() {
             <li>
               <Link
                 className="font-nav font-normal text-[#E5E7EB] text-[14px] cursor-pointer hover:text-[#AF254F]/75 transition-colors duration-500 ease-in-out"
-                href="/#recursos"
+                href="/#trabajos"
               >
                 TRABAJOS
               </Link>
@@ -187,7 +187,7 @@ export default function HeaderComp() {
                     transition-colors duration-300 ease-in-out 
                    hover:text-[#AF254F]/75
                      "
-                href="https://wa.link/20og9y"
+                href="https://wa.link/5h41dw"
                 target="_blank"
                 rel="noopener noreferrer"
               >

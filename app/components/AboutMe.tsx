@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export default function SobreNosotrosComp() {
   return (
-    <div className="flex flex-col lg:flex-row justify-center items-center py-[100px] gap-8 px-8">
+    <div
+      id="acercade"
+      className="flex flex-col lg:flex-row justify-center items-center py-[100px] gap-8 px-8"
+    >
       <div className="flex flex-col">
         <p
           data-aos="fade-up"

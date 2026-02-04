@@ -29,7 +29,7 @@ const content = [
 
 export default function ServiciosComp() {
   return (
-    <div className="bg-[#E8E8E8] py-[70px]">
+    <div id="servicios" className="bg-[#E8E8E8] py-[70px]">
       {/* Header */}
       <div className="flex flex-col items-center px-8">
         <h3

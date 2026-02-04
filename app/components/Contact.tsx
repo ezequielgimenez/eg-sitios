@@ -1,19 +1,32 @@
 import Image from "next/image";
 import ContactForm from "./Form";
+import { link } from "fs";
 
 const redes = [
-  { title: "INSTAGRAM", subtitle: "EGsitios", img: "/icons/instagram.png" },
-  { title: "EMAIL", subtitle: "egsitios@gmail.com", img: "/icons/email.png" },
+  {
+    title: "INSTAGRAM",
+    subtitle: "EGsitios",
+    img: "/icons/instagram.png",
+    link: "https://www.instagram.com/ezegimenez1",
+  },
+  {
+    title: "EMAIL",
+    subtitle: "egsitios@gmail.com",
+    img: "/icons/email.png",
+    link: "mailto:egsitios@gmail.com",
+  },
   {
     title: "WHATSAPP",
     subtitle: "+54 3756 567472",
     img: "/icons/whatsapp.png",
+    link: "https://wa.link/5h41dw",
   },
 ];
 
 export default function ContactComp() {
   return (
     <div
+      id="contacto"
       className="
         bg-gradient-to-b from-[#160E12] from-[40%] to-[#482739]
         px-6 sm:px-10 lg:px-[80px]
@@ -54,7 +67,7 @@ export default function ContactComp() {
             {redes.map((item, index) => (
               <a
                 key={index}
-                href="#"
+                href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group"

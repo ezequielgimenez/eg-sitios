@@ -35,7 +35,10 @@ const content = [
 
 export default function IncludesComp() {
   return (
-    <div className="flex justify-center bg-[#E8E8E8] py-[100px] px-8 lg:px-0">
+    <div
+      id="incluye"
+      className="flex justify-center bg-[#E8E8E8] py-[100px] px-8 lg:px-0"
+    >
       <div className="flex flex-col items-center text-center ">
         <div data-aos="fade-up" className="max-w-[250px] md:max-w-[600px]">
           <h3 className="font-sans font-extrabold text-[#121212] text-[30px] md:text-[35px] lg:text-[40px]">
