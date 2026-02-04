@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ContactForm from "./Form";
-import { link } from "fs";
+import Link from "next/link";
 
 const redes = [
   {
@@ -141,15 +141,28 @@ export default function ContactComp() {
           />
 
           <div className="flex gap-4">
-            <p className="font-mono text-[#9CA3AF] text-[14px] cursor-pointer hover:text-[#bdc0c5]">
+            <Link
+              href="/privacidad"
+              className="font-mono text-[#9CA3AF] text-[14px] hover:text-[#bdc0c5] transition-colors"
+            >
               Privacidad
-            </p>
-            <p className="font-mono text-[#9CA3AF] text-[14px] cursor-pointer hover:text-[#bdc0c5]">
+            </Link>
+
+            <Link
+              href="/terminos"
+              className="font-mono text-[#9CA3AF] text-[14px] hover:text-[#bdc0c5] transition-colors"
+            >
               Términos
-            </p>
-            <p className="font-mono text-[#9CA3AF] text-[14px] cursor-pointer hover:text-[#bdc0c5]">
+            </Link>
+
+            <a
+              href="https://wa.link/5h41dw"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-[#9CA3AF] text-[14px] hover:text-[#bdc0c5] transition-colors"
+            >
               Soporte
-            </p>
+            </a>
           </div>
         </div>
 
