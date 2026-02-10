@@ -35,9 +35,9 @@ export default async function RootLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ lang: "es" | "en" }>;
+  params: { lang: "es" | "en" }; // <--- SÍNCRONO
 }) {
-  const { lang } = await params;
+  const { lang } = params;
 
   return (
     <html lang={lang}>
