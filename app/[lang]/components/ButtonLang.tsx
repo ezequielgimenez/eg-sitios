@@ -46,7 +46,7 @@ export default function LangSwitcher({ lang }: Props) {
           {lang !== "en" && (
             <button
               onClick={() => changeLang("en")}
-              className="w-full px-3 py-2 text-left hover:bg-[#111827] text-sm"
+              className="w-full px-3 py-2 text-left cursor-pointer hover:transition-transform duration-300 hover:bg-[#AF254F]/40 text-sm"
             >
               EN
             </button>
