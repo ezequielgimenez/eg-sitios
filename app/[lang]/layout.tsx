@@ -30,18 +30,13 @@ export const metadata: Metadata = {
     "Desarrollo web profesional para negocios y emprendedores. Creamos sitios modernos, rápidos y optimizados para convertir visitas en clientes.",
 };
 
-type RootLayoutProps = {
+export default function RootLayout({
+  children,
+}: {
   children: React.ReactNode;
-  params: { lang: string }; // ⚠ usar string genérico
-};
-
-export default function RootLayout({ children, params }: RootLayoutProps) {
-  // Validar idioma
-  const lang =
-    params.lang === "es" || params.lang === "en" ? params.lang : "es";
-
+}) {
   return (
-    <html lang={lang}>
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${geistPoppins.variable} ${geistManrope.variable} antialiased`}
       >
