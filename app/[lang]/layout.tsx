@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "Desarrollo web profesional para negocios y emprendedores. Creamos sitios modernos, rápidos y optimizados para convertir visitas en clientes.",
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
   params,
 }: {
