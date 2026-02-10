@@ -3,28 +3,40 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+
 // import Loading from "@/app/loading";
 //hook
 
-const content = {
+// const content = {
+//   hero: {
+//     textos: [
+//       {
+//         titulo: "Tu presencia online empieza con una web profesional",
+//         subtitulo:
+//           "Desarrollamos páginas web y landing pages efectivas para mostrar tu negocio y generar confianza desde el primer clic.",
+//       },
+//       {
+//         titulo: "Creación de páginas web y  landing pages que venden",
+//         subtitulo:
+//           "Ayudamos a emprendedores y profesionales a tener presencia online con sitios modernos, claros y efectivos.",
+//       },
+//     ],
+//     imagen: "/logo/hero.png",
+//   },
+// };
+
+type Props = {
   hero: {
-    textos: [
-      {
-        titulo: "Tu presencia online empieza con una web profesional",
-        subtitulo:
-          "Desarrollamos páginas web y landing pages efectivas para mostrar tu negocio y generar confianza desde el primer clic.",
-      },
-      {
-        titulo: "Creación de páginas web y  landing pages que venden",
-        subtitulo:
-          "Ayudamos a emprendedores y profesionales a tener presencia online con sitios modernos, claros y efectivos.",
-      },
-    ],
-    imagen: "/logo/hero.png",
-  },
+    textos: {
+      titulo: string;
+      subtitulo: string;
+    }[];
+    imagen: string;
+    button: string;
+  };
 };
 
-export default function HeroSectionComp() {
+export default function HeroSectionComp({ hero }: Props) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
     Autoplay({
       delay: 6000,
@@ -56,7 +68,7 @@ export default function HeroSectionComp() {
       {/* Imagen + overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src={content.hero.imagen}
+          src={hero.imagen}
           alt="carousel desktop"
           fill
           className="object-cover"
@@ -73,7 +85,7 @@ export default function HeroSectionComp() {
       >
         {/* CONTAINER necesario para embla */}
         <div className="flex h-full">
-          {content.hero.textos.map((itemTexto, index) => (
+          {hero.textos.map((itemTexto, index) => (
             <div
               key={index}
               className="
@@ -86,7 +98,7 @@ export default function HeroSectionComp() {
           px-4
         "
             >
-              <h1 className="lg:max-w-[1080px] font-sans text-[#E5E7EB] font-bold  text-[40px] sm:text-4xl md:text-5xl lg:text-[72px]  pb-4">
+              <h1 className="lg:max-w-[1080px] font-sans text-[#E5E7EB] font-bold  text-[33px] sm:text-4xl md:text-5xl lg:text-[72px]  pb-4">
                 {itemTexto.titulo}
               </h1>
 
@@ -100,7 +112,7 @@ export default function HeroSectionComp() {
               <div className="mt-8">
                 <a href="#planes">
                   <button className="px-7 py-4 bg-[#AF254F] rounded-[100px] font-sans font-medium text-white hover:bg-[#AF254F]/45 transition-colors duration-500 ease-in-out cursor-pointer">
-                    Leer más
+                    {hero.button}
                   </button>
                 </a>
               </div>
@@ -111,7 +123,7 @@ export default function HeroSectionComp() {
 
       {/* DOTS */}
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-3 z-20">
-        {content.hero.textos.map((_, index) => (
+        {hero.textos.map((_, index) => (
           <button
             key={index}
             onClick={() => emblaApi?.scrollTo(index)}

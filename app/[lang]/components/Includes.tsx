@@ -1,39 +1,21 @@
 import Image from "next/image";
 
-const content = [
-  {
-    icon: "/icons-work/1.png",
-    title: "Diseño a Medida",
-    description:
-      "Nada de plantillas pre-compradas. Desarrollamos interfaces únicas centradas en la experiencia de usuario y la identidad visual de tu marca.",
-  },
-  {
-    icon: "/icons-work/2.png",
-    title: "Responsive Design",
-    description:
-      "Tu web se adaptará perfectamente a smartphones, tablets y desktops, garantizando una navegación fluida sin importar el dispositivo.",
-  },
-  {
-    icon: "/icons-work/3.png",
-    title: "Dominio & Hosting",
-    description:
-      "Infraestructura de alta disponibilidad con servidores optimizados y gestión dedominio completa para que no te preocupes por nada.",
-  },
-  {
-    icon: "/icons-work/4.png",
-    title: "Soporte Técnico",
-    description:
-      "Asistencia directa y mantenimiento preventivo. Actualizaciones constantes de seguridad y resolución de incidencias en tiempo récord.",
-  },
-  {
-    icon: "/icons-work/5.png",
-    title: "SEO & High Performance",
-    description:
-      "Optimizamos cada línea de código para maximizar la velocidad de carga (Core Web Vitals) y asegurar que los motores de búsqueda encuentren y posicionen tu sitio de forma natural.",
-  },
-];
+type contentProps = {
+  icon: string;
+  title: string;
+  description: string;
+};
 
-export default function IncludesComp() {
+type Props = {
+  incluye: {
+    titulo: string;
+    titulo2: string;
+    content: contentProps[];
+  };
+};
+
+export default function IncludesComp({ incluye }: Props) {
+  const content = incluye.content;
   return (
     <div
       id="incluye"
@@ -42,7 +24,7 @@ export default function IncludesComp() {
       <div className="flex flex-col items-center text-center ">
         <div data-aos="fade-up" className="max-w-[250px] md:max-w-[600px]">
           <h3 className="font-sans font-extrabold text-[#121212] text-[30px] md:text-[35px] lg:text-[40px]">
-            Todos nuestros trabajos{" "}
+            {incluye.titulo} <br />
             <span
               className="font-sans font-extrabold text-[30px] md:text-[35px] lg:text-[40px]
             bg-gradient-to-r
@@ -51,18 +33,20 @@ export default function IncludesComp() {
             bg-clip-text
             text-transparent"
             >
-              incluyen{" "}
+              {incluye.titulo2}
             </span>{" "}
           </h3>
         </div>
         <div className="bg-[#AF254F] w-[80px] h-[4px]" />
-        <div className="flex flex-col items-center justify-center flex-wrap gap-[24px] pt-[70px] lg:flex-row lg:px-4">
+        <div
+          data-aos="fade-up"
+          className="flex flex-col items-center justify-center flex-wrap gap-[24px] pt-[70px] lg:flex-row lg:px-4"
+        >
           {content?.map((item, index) => {
             const isLast = index === content.length - 1;
 
             return (
               <div
-                data-aos="fade-up"
                 key={index}
                 className={`flex flex-col 
               w-[350px]

@@ -1,6 +1,15 @@
 import Image from "next/image";
 
-export default function SobreNosotrosComp() {
+type Props = {
+  sobreNosotros: {
+    titulo: string;
+    subtitulo: string;
+    descripcion1: string;
+    descripcion2: string;
+  };
+};
+
+export default function SobreNosotrosComp({ sobreNosotros }: Props) {
   return (
     <div
       id="acercade"
@@ -11,12 +20,11 @@ export default function SobreNosotrosComp() {
           data-aos="fade-up"
           className="font-mono text-[#AF254F] text-[14px] tracking-[2px] "
         >
-          SOBRE NOSOTROS
+          {sobreNosotros.titulo}
         </p>
         <div data-aos="fade-up" className="lg:max-w-[643px] pt-[10px] ">
           <h3 className="font-sans font-semibold text-[#121212] text-[26px] xs:text-[28px] sm:text-[32px] lg:text-[40px]">
-            Enfocados en crear soluciones web claras, modernas y adaptadas a
-            cada necesidad.
+            {sobreNosotros.subtitulo}
           </h3>
         </div>
         <div className="lg:max-w-[392px] pt-[50px] space-y-[17px]">
@@ -24,17 +32,13 @@ export default function SobreNosotrosComp() {
             data-aos="fade-up"
             className="font-mono font-light text-[#666666] text-[16px] sm:text-[18px]"
           >
-            Nuestro objetivo es interpretar de la mejor manera las ideas del
-            cliente y asesorarlo sobre la implementación de las tecnologías que
-            su proyecto necesita.
+            {sobreNosotros.descripcion1}
           </p>
           <p
             data-aos="fade-up"
             className="font-mono font-light text-[#666666] text-[16px] sm:text-[18px]"
           >
-            EG Sitios nace como un proyecto de desarrollo web enfocado en
-            acompañar a emprendedores y profesionales en la creación de su
-            presencia digital.
+            {sobreNosotros.descripcion2}
           </p>
         </div>
       </div>

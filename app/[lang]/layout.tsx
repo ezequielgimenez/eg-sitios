@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Montserrat, Outfit, Manrope } from "next/font/google";
-import "./globals.css";
-import AOSProvider from "./AosProvider";
+import "../globals.css";
+import AOSProvider from "../AosProvider";
 
 const geistSans = Montserrat({
   variable: "--font-geist-sans",
@@ -30,13 +30,17 @@ export const metadata: Metadata = {
     "Desarrollo web profesional para negocios y emprendedores. Creamos sitios modernos, rápidos y optimizados para convertir visitas en clientes.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-}: Readonly<{
+  params,
+}: {
   children: React.ReactNode;
-}>) {
+  params: { lang: string };
+}) {
+  const { lang } = await params;
+
   return (
-    <html lang="en">
+    <html lang={lang}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${geistPoppins.variable} ${geistManrope.variable} antialiased`}
       >

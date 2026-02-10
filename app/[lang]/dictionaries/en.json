@@ -1,0 +1,98 @@
+{
+  "hero": {
+    "textos": [
+      {
+        "titulo": "Your online presence starts with a professional website",
+        "subtitulo": "We build effective websites and landing pages to showcase your business and build trust from the first click."
+      },
+      {
+        "titulo": "Websites and landing pages that convert",
+        "subtitulo": "We help entrepreneurs and professionals build a modern, clear and effective online presence."
+      }
+    ],
+    "imagen": "/logo/hero.png",
+    "button": "Read more"
+  },
+  "nav": {
+    "inicio": "HOME",
+    "servicios": "SERVICES",
+    "about": "ABOUT EG SITIOS",
+    "trabajos": "WORKS",
+    "contacto": "CONTACT"
+  },
+  "services": {
+    "title": "What Do We Offer?",
+    "subtitle": "We provide different web services and solutions designed to meet the needs of your project.",
+    "items": [
+      {
+        "img": "/icons/servicio1.png",
+        "titulo": "Web Design",
+        "descripcion": "Design and development of modern websites for entrepreneurs and professionals who want to showcase their services with clean, modern layouts that adapt to any device."
+      },
+      {
+        "img": "/icons/servicio2.png",
+        "titulo": "Landing Pages",
+        "descripcion": "Design and development of high-impact landing pages, created to clearly present what you offer, sell your products, showcase your services as a professional, and attract new clients."
+      },
+      {
+        "img": "/icons/servicio3.png",
+        "titulo": "Website Maintenance",
+        "descripcion": "Ongoing website maintenance to keep your site always updated, secure, and running smoothly, with technical support for any issues."
+      },
+      {
+        "img": "/icons/servicio4.png",
+        "titulo": "Managed Website",
+        "descripcion": "Managed website service that includes site design, domain registration and renewal, hosting, ongoing maintenance, and technical support."
+      }
+    ],
+    "ctaTitle": "Ready for the next level?",
+    "ctaText": "We turn your ideas into a clear and effective digital experience.",
+    "ctaButton": "Contact now"
+  },
+  "sobreNosotros": {
+    "titulo": "ABOUT US",
+    "subtitulo": "Focused on creating clear, modern web solutions tailored to each need.",
+    "descripcion1": "Our goal is to understand our clients’ ideas in the best possible way and guide them in choosing and implementing the technologies their project requires.",
+    "descripcion2": "EG Sitios was created as a web development project focused on supporting entrepreneurs and professionals in building their digital presence."
+  },
+  "incluye": {
+    "titulo": "All our work",
+    "titulo2": "includes",
+    "content": [
+      {
+        "icon": "/icons-work/1.png",
+        "title": "Custom Design",
+        "description": "No pre-made templates. We build unique interfaces focused on user experience and your brand’s visual identity."
+      },
+      {
+        "icon": "/icons-work/2.png",
+        "title": "Responsive Design",
+        "description": "Your website will adapt perfectly to smartphones, tablets, and desktops, ensuring a smooth experience on any device."
+      },
+      {
+        "icon": "/icons-work/3.png",
+        "title": "Domain & Hosting",
+        "description": "High-availability infrastructure with optimized servers and full domain management, so you don’t have to worry about anything."
+      },
+      {
+        "icon": "/icons-work/4.png",
+        "title": "Technical Support",
+        "description": "Direct assistance and preventive maintenance. Continuous security updates and fast issue resolution."
+      },
+      {
+        "icon": "/icons-work/5.png",
+        "title": "SEO & High Performance",
+        "description": "We optimize every line of code to maximize loading speed (Core Web Vitals) and help search engines naturally find and rank your site."
+      }
+    ]
+  },
+  "tituloTrabajos": "Latest projects completed",
+  "contacto": {
+    "titulo": "Contact",
+    "subtitulo": "Tell us about your next project",
+    "descripcion": "We're ready to transform your vision into a digital reality. Choose your preferred channel or send us a direct message.",
+    "formNombre": "You name",
+    "formEmail": "You@email.com",
+    "formMensaje": "Tell us about your project, business, or venture."
+  }
+}

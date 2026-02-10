@@ -2,7 +2,13 @@
 
 import { useState } from "react";
 
-export default function ContactForm() {
+type PropsForm = {
+  formNombre: string;
+  formEmail: string;
+  formMensaje: string;
+};
+
+export default function ContactForm(texto: PropsForm) {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
@@ -66,7 +72,7 @@ export default function ContactForm() {
           value={nombre}
           onChange={(e) => setNombre(e.target.value)}
           required
-          placeholder="Tu nombre"
+          placeholder={texto.formNombre}
           className="bg-[#FFFFFF]/5 border font-mono text-[#9CA3AF] border-[#FFFFFF]/10 rounded-md p-3 outline-none focus:ring-2 focus:ring-[#FFFFFF]/15"
         />
 
@@ -79,7 +85,7 @@ export default function ContactForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          placeholder="tu@email.com"
+          placeholder={texto.formEmail}
           className="bg-[#FFFFFF]/5 border font-mono text-[#9CA3AF] border-[#FFFFFF]/10 rounded-md p-3 outline-none focus:ring-2 focus:ring-[#FFFFFF]/15"
         />
 
@@ -92,7 +98,7 @@ export default function ContactForm() {
           onChange={(e) => setMensaje(e.target.value)}
           required
           rows={4}
-          placeholder="Contanos sobre tu proyecto, negocio o emprendimiento.."
+          placeholder={texto.formMensaje}
           className="h-[154px] bg-[#FFFFFF]/5 border font-mono text-[#9CA3AF] border-[#FFFFFF]/10 rounded-md p-3 outline-none focus:ring-2 focus:ring-[#FFFFFF]/15"
         />
         <div className="max-w-[494px] pt-[24px]">

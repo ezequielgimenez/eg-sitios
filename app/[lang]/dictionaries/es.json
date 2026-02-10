@@ -1,0 +1,99 @@
+{
+  "hero": {
+    "textos": [
+      {
+        "titulo": "Tu presencia online empieza con una web profesional",
+        "subtitulo": "Desarrollamos páginas web y landing pages efectivas para mostrar tu negocio y generar confianza desde el primer clic."
+      },
+      {
+        "titulo": "Creación de páginas web y landing pages que venden",
+        "subtitulo": "Ayudamos a emprendedores y profesionales a tener presencia online con sitios modernos, claros y efectivos."
+      }
+    ],
+    "imagen": "/logo/hero.png",
+    "button": "Leer más"
+  },
+  "nav": {
+    "inicio": "INICIO",
+    "servicios": "SERVICIOS",
+    "about": "SOBRE EG SITIOS",
+    "trabajos": "TRABAJOS",
+    "contacto": "CONTACTO"
+  },
+
+  "services": {
+    "title": "¿Qué Ofrecemos?",
+    "subtitle": "Brindamos diferentes servicios y soluciones web pensadas para cubrir las necesidades de tu proyecto.",
+    "items": [
+      {
+        "img": "/icons/servicio1.png",
+        "titulo": "Diseño Web",
+        "descripcion": "Diseño y desarrollo de sitios web modernos para emprendedores y profesionales que quieren mostrar sus servicios con diseños claros, modernos y adaptables a cualquier dispositivo."
+      },
+      {
+        "img": "/icons/servicio2.png",
+        "titulo": "Landing Pages",
+        "descripcion": "Diseño y desarrollo de landing pages de alto impacto, pensadas para mostrar lo que ofrecés de forma ordenada, vender tus productos, presentar tus servicios como profesional y captar nuevos clientes."
+      },
+      {
+        "img": "/icons/servicio3.png",
+        "titulo": "Mantenimiento Web",
+        "descripcion": "Mantenimiento web continuo para que tu sitio esté siempre actualizado, seguro y funcionando correctamente, con soporte técnico ante cualquier inconveniente."
+      },
+      {
+        "img": "/icons/servicio4.png",
+        "titulo": "Web Gestionada",
+        "descripcion": "Servicio de web gestionada que incluye diseño del sitio, registro y renovación de dominio, hosting, mantenimiento continuo y soporte técnico."
+      }
+    ],
+    "ctaTitle": "¿Listo para el siguiente nivel?",
+    "ctaText": "Convertimos tus ideas en una experiencia digital clara y efectiva.",
+    "ctaButton": "Contactar ahora"
+  },
+  "sobreNosotros": {
+    "titulo": "SOBRE NOSOTROS",
+    "subtitulo": "Enfocados en crear soluciones web claras, modernas y adaptadas a cada necesidad.",
+    "descripcion1": "Nuestro objetivo es interpretar de la mejor manera las ideas del cliente y asesorarlo sobre la implementación de las tecnologías que su proyecto necesita.",
+    "descripcion2": "EG Sitios nace como un proyecto de desarrollo web enfocado en acompañar a emprendedores y profesionales en la creación de su presencia digital."
+  },
+  "incluye": {
+    "titulo": "Todos nuestros trabajos",
+    "titulo2": "incluyen",
+    "content": [
+      {
+        "icon": "/icons-work/1.png",
+        "title": "Diseño a Medida",
+        "description": "Nada de plantillas pre-compradas. Desarrollamos interfaces únicas centradas en la experiencia de usuario y la identidad visual de tu marca."
+      },
+      {
+        "icon": "/icons-work/2.png",
+        "title": "Responsive Design",
+        "description": "Tu web se adaptará perfectamente a smartphones, tablets y desktops, garantizando una navegación fluida sin importar el dispositivo."
+      },
+      {
+        "icon": "/icons-work/3.png",
+        "title": "Dominio & Hosting",
+        "description": "Infraestructura de alta disponibilidad con servidores optimizados y gestión dedominio completa para que no te preocupes por nada."
+      },
+      {
+        "icon": "/icons-work/4.png",
+        "title": "Soporte Técnico",
+        "description": "Asistencia directa y mantenimiento preventivo. Actualizaciones constantes de seguridad y resolución de incidencias en tiempo récord."
+      },
+      {
+        "icon": "/icons-work/5.png",
+        "title": "SEO & High Performance",
+        "description": "Optimizamos cada línea de código para maximizar la velocidad de carga (Core Web Vitals) y asegurar que los motores de búsqueda encuentren y posicionen tu sitio de forma natural."
+      }
+    ]
+  },
+  "tituloTrabajos": "Últimos trabajos realizados",
+  "contacto": {
+    "titulo": "Contacto",
+    "subtitulo": "Hablanos de tu próximo proyecto",
+    "descripcion": "Estamos listos para transformar tu visión en una realidad digital. Elige el canal que prefieras o envíanos un mensaje directo.",
+    "formNombre": "Tu nombre",
+    "formEmail": "Tu@email.com",
+    "formMensaje": "Contanos sobre tu proyecto, negocio o emprendimiento.."
+  }
+}

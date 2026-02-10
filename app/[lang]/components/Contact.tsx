@@ -23,7 +23,18 @@ const redes = [
   },
 ];
 
-export default function ContactComp() {
+type Props = {
+  contacto: {
+    titulo: string;
+    subtitulo: string;
+    descripcion: string;
+    formNombre: string;
+    formEmail: string;
+    formMensaje: string;
+  };
+};
+
+export default function ContactComp({ contacto }: Props) {
   return (
     <div
       id="contacto"
@@ -36,7 +47,7 @@ export default function ContactComp() {
       {/* HEADER */}
       <div className="flex flex-col items-center">
         <h5 className="font-sans font-bold text-white text-[36px] sm:text-[44px] lg:text-[60px]">
-          Contacto
+          {contacto.titulo}
         </h5>
         <div className="bg-[#AF254F] w-[80px] h-[4px] mt-2" />
       </div>
@@ -54,12 +65,11 @@ export default function ContactComp() {
         {/* LEFT */}
         <div className="flex flex-col max-w-[525px]">
           <h5 className="font-sans font-bold text-white text-[24px] sm:text-[28px] lg:text-[30px]">
-            Hablanos de tu próximo proyecto
+            {contacto.subtitulo}
           </h5>
 
           <p className="font-mono text-[#9CA3AF] text-[16px] sm:text-[18px] pt-[24px]">
-            Estamos listos para transformar tu visión en una realidad digital.
-            Elige el canal que prefieras o envíanos un mensaje directo.
+            {contacto.descripcion}
           </p>
 
           {/* REDES */}
@@ -115,7 +125,11 @@ export default function ContactComp() {
 
         {/* RIGHT */}
         <div className="w-full max-w-[500px]">
-          <ContactForm />
+          <ContactForm
+            formEmail={contacto.formEmail}
+            formNombre={contacto.formNombre}
+            formMensaje={contacto.formMensaje}
+          />
         </div>
       </div>
 

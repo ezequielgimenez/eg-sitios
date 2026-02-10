@@ -3,8 +3,21 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import LangSwitcher from "./ButtonLang";
 
-export default function HeaderComp() {
+type Props = {
+  lang: "es" | "en";
+
+  nav: {
+    inicio: string;
+    servicios: string;
+    about: string;
+    trabajos: string;
+    contacto: string;
+  };
+};
+
+export default function HeaderComp({ lang, nav }: Props) {
   const [showNav, setShowNav] = useState(false);
   const [active, setActive] = useState("inicio");
 
@@ -96,36 +109,37 @@ export default function HeaderComp() {
               height={24}
             ></Image>
           </div>
+          <LangSwitcher lang={lang} />
         </div>
 
         <Link
           className="py-8 text-[22px] font-sans font-semibold text-white drop-shadow-[0px_0px_5px_rgba(197,75,140,1)]"
-          href="/#servicios"
+          href="#servicios"
           onClick={openNav}
         >
-          SERVICIOS
+          {nav.servicios}
         </Link>
         <Link
           className="py-8 text-[22px] font-sans font-semibold text-white drop-shadow-[0px_0px_5px_rgba(197,75,140,1)]"
-          href="/#acercade"
+          href={`/${lang}#acercade`}
           onClick={openNav}
         >
-          SOBRE EG SITIOS
+          {nav.about}
         </Link>
         <Link
           className="py-8 text-[22px] font-sans font-semibold text-white drop-shadow-[0px_0px_5px_rgba(197,75,140,1)]"
-          href="/#trabajos"
+          href="#trabajos"
           onClick={openNav}
         >
-          TRABAJOS
+          {nav.trabajos}
         </Link>
 
         <Link
           className="py-8 text-[22px] font-sans font-semibold text-white drop-shadow-[0px_0px_5px_rgba(197,75,140,1)]"
-          href="/#contacto"
+          href="#contacto"
           onClick={openNav}
         >
-          CONTACTO
+          {nav.contacto}
         </Link>
       </div>
 
@@ -147,33 +161,33 @@ export default function HeaderComp() {
         <nav className="flex">
           <ul className="flex justify-center items-center gap-14">
             <li>
-              <Link className={linkClass("inicio")} href="/#inicio">
-                INICIO
+              <Link className={linkClass("inicio")} href={`/${lang}#inicio`}>
+                {nav.inicio}
               </Link>
             </li>
             <li>
               <Link
                 className="font-nav font-normal text-[#E5E7EB] text-[14px] cursor-pointer hover:text-[#AF254F]/75 transition-colors duration-500 ease-in-out"
-                href="/#servicios"
+                href="#servicios"
               >
-                SERVICIOS
+                {nav.servicios}
               </Link>
             </li>
             <li>
               <Link
                 className="font-nav font-normal text-[#E5E7EB] text-[14px] cursor-pointer hover:text-[#AF254F]/75 transition-colors duration-500 ease-in-out"
-                href="/#acercade"
+                href="#acercade"
               >
-                SOBRE EG SITIOS
+                {nav.about}
               </Link>
             </li>
 
             <li>
               <Link
                 className="font-nav font-normal text-[#E5E7EB] text-[14px] cursor-pointer hover:text-[#AF254F]/75 transition-colors duration-500 ease-in-out"
-                href="/#trabajos"
+                href="#trabajos"
               >
-                TRABAJOS
+                {nav.trabajos}
               </Link>
             </li>
 
@@ -191,9 +205,10 @@ export default function HeaderComp() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                CONTACTO
+                {nav.contacto}
               </a>
             </li>
+            <LangSwitcher lang={lang} />
           </ul>
         </nav>
       </div>

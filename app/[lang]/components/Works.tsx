@@ -21,7 +21,11 @@ const imagenes = [
   },
 ];
 
-export default function WorksComp() {
+type Props = {
+  tituloTrabajos: string;
+};
+
+export default function WorksComp(texto: Props) {
   return (
     <div id="trabajos" className="pt-[100px] pb-[250px]">
       <div data-aos="fade-up" className="flex flex-col items-center px-4">
@@ -33,7 +37,7 @@ export default function WorksComp() {
           unoptimized
         />
         <h5 className="font-sans font-extrabold text-[#121212] text-[30px] text-center pt-[30px] md:text-[35px] lg:text-[40px]">
-          Ultimos Trabajos Realizados
+          {texto.tituloTrabajos}
         </h5>
         <div className="bg-[#AF254F] w-[80px] h-[4px]" />
       </div>
