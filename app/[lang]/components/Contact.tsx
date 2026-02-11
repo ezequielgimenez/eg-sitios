@@ -7,7 +7,7 @@ const redes = [
     title: "INSTAGRAM",
     subtitle: "EGsitios",
     img: "/icons/instagram.png",
-    link: "https://www.instagram.com/ezegimenez1",
+    link: "https://www.instagram.com/egsitios",
   },
   {
     title: "EMAIL",

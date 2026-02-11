@@ -127,9 +127,15 @@ export default function ServiciosComp({ services }: Props) {
             </p>
           </div>
           <div>
-            <button className="w-[280px] h-[68px]  bg-[#AF254F] font-sans font-bold text-[18px] py-5 px-10 rounded-[24px] hover:bg-[#AF254F]/45 transition-colors duration-500 ease-in-out cursor-pointer ">
-              {services.ctaButton}
-            </button>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://wa.link/5h41dw"
+            >
+              <button className="w-[280px] h-[68px]  bg-[#AF254F] font-sans font-bold text-[18px] py-5 px-10 rounded-[24px] hover:bg-[#AF254F]/45 transition-colors duration-500 ease-in-out cursor-pointer ">
+                {services.ctaButton}
+              </button>
+            </a>
           </div>
         </div>
       </div>
