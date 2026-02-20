@@ -110,7 +110,7 @@ export default function HeroSectionComp({ hero }: Props) {
               </p>
 
               <div className="mt-8">
-                <a href="#planes">
+                <a href="#servicios">
                   <button className="px-7 py-4 bg-[#AF254F] rounded-[100px] font-sans font-medium text-white hover:bg-[#AF254F]/45 transition-colors duration-500 ease-in-out cursor-pointer">
                     {hero.button}
                   </button>
