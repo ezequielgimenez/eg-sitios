@@ -13,12 +13,6 @@ const imagenes = [
     subtitle: "Nutricionista",
     link: "https://nutricionxsofia.vercel.app/",
   },
-  {
-    img: "/icons-work/trabajo3.png",
-    title: "Landing page - Nutricionet",
-    subtitle: "Nutricionista",
-    link: "https://nutricionet.vercel.app/",
-  },
 ];
 
 type Props = {
