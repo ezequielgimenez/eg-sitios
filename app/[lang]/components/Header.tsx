@@ -142,58 +142,58 @@ export default function HeaderComp({ lang, nav }: Props) {
           {nav.contacto}
         </Link>
       </div>
+      <div className="bg-[#111827]">
+        <div className="hidden lg:flex justify-between h-[85px] max-w-[1440px] mx-auto px-8">
+          <div className="cursor-pointer">
+            <Link href="/">
+              <Image
+                src="/logo/logo.png"
+                alt="Logo-EG-sitios"
+                width={202}
+                height={57}
+                priority
+                unoptimized
+                className="py-2"
+              />
+            </Link>
+          </div>
 
-      <div className="hidden lg:flex justify-between bg-[#111827] h-[85px]  px-12">
-        <div className="cursor-pointer">
-          <Link href="/">
-            <Image
-              src="/logo/logo.png"
-              alt="Logo-EG-sitios"
-              width={202}
-              height={57}
-              priority
-              unoptimized
-              className="py-2"
-            />
-          </Link>
-        </div>
+          <nav className="flex">
+            <ul className="flex justify-center items-center gap-14">
+              <li>
+                <Link className={linkClass("inicio")} href={`/${lang}#inicio`}>
+                  {nav.inicio}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="font-nav font-normal text-[#E5E7EB] text-[14px] cursor-pointer hover:text-[#AF254F]/75 transition-colors duration-500 ease-in-out"
+                  href="#servicios"
+                >
+                  {nav.servicios}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="font-nav font-normal text-[#E5E7EB] text-[14px] cursor-pointer hover:text-[#AF254F]/75 transition-colors duration-500 ease-in-out"
+                  href="#acercade"
+                >
+                  {nav.about}
+                </Link>
+              </li>
 
-        <nav className="flex">
-          <ul className="flex justify-center items-center gap-14">
-            <li>
-              <Link className={linkClass("inicio")} href={`/${lang}#inicio`}>
-                {nav.inicio}
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="font-nav font-normal text-[#E5E7EB] text-[14px] cursor-pointer hover:text-[#AF254F]/75 transition-colors duration-500 ease-in-out"
-                href="#servicios"
-              >
-                {nav.servicios}
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="font-nav font-normal text-[#E5E7EB] text-[14px] cursor-pointer hover:text-[#AF254F]/75 transition-colors duration-500 ease-in-out"
-                href="#acercade"
-              >
-                {nav.about}
-              </Link>
-            </li>
+              <li>
+                <Link
+                  className="font-nav font-normal text-[#E5E7EB] text-[14px] cursor-pointer hover:text-[#AF254F]/75 transition-colors duration-500 ease-in-out"
+                  href="#trabajos"
+                >
+                  {nav.trabajos}
+                </Link>
+              </li>
 
-            <li>
-              <Link
-                className="font-nav font-normal text-[#E5E7EB] text-[14px] cursor-pointer hover:text-[#AF254F]/75 transition-colors duration-500 ease-in-out"
-                href="#trabajos"
-              >
-                {nav.trabajos}
-              </Link>
-            </li>
-
-            <li>
-              <a
-                className="
+              <li>
+                <a
+                  className="
                     inline-flex items-center justify-center
                     border border-[#AF254F] rounded-[100px]
                     px-5 py-3
@@ -201,16 +201,17 @@ export default function HeaderComp({ lang, nav }: Props) {
                     transition-colors duration-300 ease-in-out 
                    hover:text-[#AF254F]/75
                      "
-                href="https://wa.link/5h41dw"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {nav.contacto}
-              </a>
-            </li>
-            <LangSwitcher lang={lang} />
-          </ul>
-        </nav>
+                  href="https://wa.link/5h41dw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {nav.contacto}
+                </a>
+              </li>
+              <LangSwitcher lang={lang} />
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
   );
