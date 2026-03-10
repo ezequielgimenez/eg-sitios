@@ -25,9 +25,9 @@ const geistPoppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Desarrollo web | EG Sitios",
+  title: "Desarrollo web | Webkelar Digital",
   description:
-    "Desarrollo web profesional para negocios y emprendedores. Creamos sitios modernos, rápidos y optimizados para convertir visitas en clientes.",
+    "Desarrollo web profesional para negocios y profesionales. Creamos sitios rápidos, modernos y sistemas a medida diseñados para convertir visitas en clientes.",
 };
 
 export default function RootLayout({
