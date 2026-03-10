@@ -40,7 +40,7 @@ export default function ServiciosComp({ services }: Props) {
       {/* Cards */}
       <div
         data-aos="fade-up"
-        className="flex justify-center flex-wrap gap-[32px] pt-[73px] px-8"
+        className="w-full max-w-[1440px] mx-auto flex items-center justify-center flex-wrap gap-[32px] pt-[73px] px-8"
       >
         {services.items.map((item, index) => (
           <div

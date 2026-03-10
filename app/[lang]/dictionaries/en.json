@@ -6,6 +6,10 @@
         "subtitulo": "We build effective websites and landing pages to showcase your business and build trust from the first click."
       },
       {
+        "titulo": "Customized systems to optimize your management",
+        "subtitulo": "We develop custom software designed to automate processes, organize your data, and solve your company's specific needs."
+      },
+      {
         "titulo": "Websites and landing pages that convert",
         "subtitulo": "We help entrepreneurs and professionals build a modern, clear and effective online presence."
       }
@@ -16,7 +20,7 @@
   "nav": {
     "inicio": "HOME",
     "servicios": "SERVICES",
-    "about": "ABOUT EG SITIOS",
+    "about": "ABOUT US",
     "trabajos": "WORKS",
     "contacto": "CONTACT"
   },
@@ -53,7 +57,7 @@
     "titulo": "ABOUT US",
     "subtitulo": "Focused on creating clear, modern web solutions tailored to each need.",
     "descripcion1": "Our goal is to understand our clients’ ideas in the best possible way and guide them in choosing and implementing the technologies their project requires.",
-    "descripcion2": "EG Sitios was created as a web development project focused on supporting entrepreneurs and professionals in building their digital presence."
+    "descripcion2": "Webkelar Digital was created as a web development project focused on supporting entrepreneurs and professionals in building their digital presence."
   },
   "incluye": {
     "titulo": "All our work",

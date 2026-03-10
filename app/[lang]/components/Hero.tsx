@@ -7,24 +7,6 @@ import Image from "next/image";
 // import Loading from "@/app/loading";
 //hook
 
-// const content = {
-//   hero: {
-//     textos: [
-//       {
-//         titulo: "Tu presencia online empieza con una web profesional",
-//         subtitulo:
-//           "Desarrollamos páginas web y landing pages efectivas para mostrar tu negocio y generar confianza desde el primer clic.",
-//       },
-//       {
-//         titulo: "Creación de páginas web y  landing pages que venden",
-//         subtitulo:
-//           "Ayudamos a emprendedores y profesionales a tener presencia online con sitios modernos, claros y efectivos.",
-//       },
-//     ],
-//     imagen: "/logo/hero.png",
-//   },
-// };
-
 type Props = {
   hero: {
     textos: {
@@ -39,7 +21,7 @@ type Props = {
 export default function HeroSectionComp({ hero }: Props) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
     Autoplay({
-      delay: 6000,
+      delay: 5000,
       stopOnInteraction: false,
       stopOnMouseEnter: false,
     }),
@@ -75,7 +57,7 @@ export default function HeroSectionComp({ hero }: Props) {
           priority
           unoptimized
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-[#993251]/35" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/87 to-[#993251]/30" />
       </div>
 
       {/* SLIDER */}

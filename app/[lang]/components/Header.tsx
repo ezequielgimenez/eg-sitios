@@ -75,7 +75,7 @@ export default function HeaderComp({ lang, nav }: Props) {
         <div className="absolute left-1/2 -translate-x-1/2 pt-2">
           <Link href="/">
             <Image
-              src="/logo/logo.png"
+              src="/logo/logo.svg"
               alt="Logo"
               width={202}
               height={57}
@@ -85,7 +85,6 @@ export default function HeaderComp({ lang, nav }: Props) {
           </Link>
         </div>
       </div>
-
       <div
         className={`
     fixed top-0 left-0 w-screen h-screen bg-[#252525]/95
@@ -142,13 +141,14 @@ export default function HeaderComp({ lang, nav }: Props) {
           {nav.contacto}
         </Link>
       </div>
-      <div className="bg-[#111827]">
+      {/*  bg-gradient-to-t from-[#160E12] to-[#482739]  */}
+      <div className="bg-[#0D1321]">
         <div className="hidden lg:flex justify-between h-[85px] max-w-[1440px] mx-auto px-8">
           <div className="cursor-pointer">
             <Link href="/">
               <Image
-                src="/logo/logo.png"
-                alt="Logo-EG-sitios"
+                src="/logo/logo.svg"
+                alt="Logo-Webkelar"
                 width={202}
                 height={57}
                 priority

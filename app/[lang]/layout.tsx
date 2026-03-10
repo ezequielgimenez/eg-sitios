@@ -25,7 +25,7 @@ const geistPoppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Desarrollo web | Webkelar Digital",
+  title: "Webkelar Digital | Desarrollo Web",
   description:
     "Desarrollo web profesional para negocios y profesionales. Creamos sitios rápidos, modernos y sistemas a medida diseñados para convertir visitas en clientes.",
 };

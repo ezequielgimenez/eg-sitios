@@ -5,15 +5,15 @@ import Link from "next/link";
 const redes = [
   {
     title: "INSTAGRAM",
-    subtitle: "EGsitios",
+    subtitle: "Webkelar",
     img: "/icons/instagram.png",
-    link: "https://www.instagram.com/egsitios",
+    link: "https://www.instagram.com/webkelar",
   },
   {
     title: "EMAIL",
-    subtitle: "egsitios@gmail.com",
+    subtitle: "webkelar@gmail.com",
     img: "/icons/email.png",
-    link: "mailto:egsitios@gmail.com",
+    link: "mailto:webkelar@gmail.com",
   },
   {
     title: "WHATSAPP",
@@ -181,8 +181,8 @@ export default function ContactComp({ contacto }: Props) {
         </div>
 
         <p className="font-sans font-light text-white text-[13px] text-center pt-4">
-          © 2026 EG Sitios. <br className="sm:hidden" /> Todos los derechos
-          reservados.
+          © 2026 Webkelar Digital. <br className="sm:hidden" /> Todos los
+          derechos reservados.
         </p>
       </div>
     </div>

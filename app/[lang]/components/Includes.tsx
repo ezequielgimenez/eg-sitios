@@ -40,7 +40,7 @@ export default function IncludesComp({ incluye }: Props) {
         <div className="bg-[#AF254F] w-[80px] h-[4px]" />
         <div
           data-aos="fade-up"
-          className="flex flex-col items-center justify-center flex-wrap gap-[24px] pt-[70px] lg:flex-row lg:px-4"
+          className="max-w-[1440px] flex flex-col items-center justify-center flex-wrap gap-[24px] pt-[70px] lg:flex-row lg:px-4"
         >
           {content?.map((item, index) => {
             const isLast = index === content.length - 1;

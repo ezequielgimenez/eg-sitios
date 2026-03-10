@@ -6,6 +6,10 @@
         "subtitulo": "Desarrollamos páginas web y landing pages efectivas para mostrar tu negocio y generar confianza desde el primer clic."
       },
       {
+        "titulo": "Sistemas personalizados para optimizar tu gestión",
+        "subtitulo": "Desarrollamos software a medida diseñado para automatizar procesos, organizar tus datos y resolver las necesidades específicas de tu empresa."
+      },
+      {
         "titulo": "Creación de páginas web y landing pages que venden",
         "subtitulo": "Ayudamos a emprendedores y profesionales a tener presencia online con sitios modernos, claros y efectivos."
       }
@@ -16,7 +20,7 @@
   "nav": {
     "inicio": "INICIO",
     "servicios": "SERVICIOS",
-    "about": "SOBRE EG SITIOS",
+    "about": "SOBRE NOSOTROS",
     "trabajos": "TRABAJOS",
     "contacto": "CONTACTO"
   },
@@ -53,8 +57,8 @@
   "sobreNosotros": {
     "titulo": "SOBRE NOSOTROS",
     "subtitulo": "Enfocados en crear soluciones web claras, modernas y adaptadas a cada necesidad.",
-    "descripcion1": "Nuestro objetivo es interpretar de la mejor manera las ideas del cliente y asesorarlo sobre la implementación de las tecnologías que su proyecto necesita.",
-    "descripcion2": "EG Sitios nace como un proyecto de desarrollo web enfocado en acompañar a emprendedores y profesionales en la creación de su presencia digital."
+    "descripcion1": "Nuestro objetivo es interpretar de la mejor manera las ideas del cliente y asesorarlo sobre la implementación de las tecnologías que su proyecto o negocio necesita,  ya sea a través del desarrollo web o de sistemas a medida para optimizar procesos, mejorar la gestión del negocio y resolver necesidades específicas de cada cliente.",
+    "descripcion2": "Webkelar Digital nace como un proyecto de desarrollo web enfocado en acompañar a negocios, emprendedores y profesionales en la creación de su presencia digital."
   },
   "incluye": {
     "titulo": "Todos nuestros trabajos",
@@ -94,6 +98,6 @@
     "descripcion": "Estamos listos para transformar tu visión en una realidad digital. Elige el canal que prefieras o envíanos un mensaje directo.",
     "formNombre": "Tu nombre",
     "formEmail": "Tu@email.com",
-    "formMensaje": "Contanos sobre tu proyecto, negocio o emprendimiento.."
+    "formMensaje": "Contanos sobre tu proyecto, negocio, emprendimiento o servicios.."
   }
 }
