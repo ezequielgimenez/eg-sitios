@@ -41,8 +41,8 @@
       },
       {
         "img": "/icons/servicio3.png",
-        "titulo": "Mantenimiento Web",
-        "descripcion": "Mantenimiento web continuo para que tu sitio esté siempre actualizado, seguro y funcionando correctamente, con soporte técnico ante cualquier inconveniente."
+        "titulo": "Sistemas a Medida",
+        "descripcion": "Creación de sistemas personalizados diseñados para adaptarse a las necesidades de cada proyecto, ayudando a optimizar procesos, mejorar la gestión y potenciar el crecimiento del negocio."
       },
       {
         "img": "/icons/servicio4.png",
@@ -77,7 +77,7 @@
       {
         "icon": "/icons-work/3.png",
         "title": "Dominio & Hosting",
-        "description": "Infraestructura de alta disponibilidad con servidores optimizados y gestión dedominio completa para que no te preocupes por nada."
+        "description": "Infraestructura de alta disponibilidad con servidores optimizados y gestión de dominio completa para que no te preocupes por nada."
       },
       {
         "icon": "/icons-work/4.png",
