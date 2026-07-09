@@ -2,16 +2,22 @@ import Image from "next/image";
 
 const imagenes = [
   {
+    img: "/icons-work/overall.jpg",
+    title: "Overall Center Gym",
+    subtitle: "",
+    link: "https://www.overallcentergym.com",
+  },
+  {
     img: "/icons-work/trabajo1.png",
     title: "Landing Page - Lic. Nazarena Rodriguez",
-    subtitle: "Nutricionista",
+    subtitle: "",
     link: "https://www.nazarenarodriguez.ar/",
   },
   {
     img: "/icons-work/trabajo2.png",
     title: "Pagina web - NutriciónxSofia",
-    subtitle: "Nutricionista",
-    link: "https://nutricionxsofia.vercel.app/",
+    subtitle: "",
+    link: "https://nutricionxsofia.com.ar/",
   },
 ];
 
