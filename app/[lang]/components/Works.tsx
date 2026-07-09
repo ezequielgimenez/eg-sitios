@@ -3,7 +3,7 @@ import Image from "next/image";
 const imagenes = [
   {
     img: "/icons-work/overall.jpg",
-    title: "Overall Center Gym",
+    title: "Pagina web - Overall Center Gym",
     subtitle: "",
     link: "https://www.overallcentergym.com",
   },
