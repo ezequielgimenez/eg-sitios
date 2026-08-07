@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
-import { Poppins, Montserrat, Outfit, Manrope } from "next/font/google";
-import "../globals.css";
 import AOSProvider from "../AosProvider";
+import WhatsappButton from "./components/WhatsappButton";
+import { Poppins, Montserrat, Outfit, Manrope } from "next/font/google";
+// @ts-ignore
+import "../globals.css";
 
 const geistSans = Montserrat({
   variable: "--font-geist-sans",
@@ -42,6 +44,7 @@ export default function RootLayout({
       >
         <AOSProvider />
         {children}
+        <WhatsappButton />
       </body>
     </html>
   );
