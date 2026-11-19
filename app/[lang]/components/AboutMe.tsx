@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 type Props = {
   sobreNosotros: {
     titulo: string;
@@ -13,44 +11,39 @@ export default function SobreNosotrosComp({ sobreNosotros }: Props) {
   return (
     <div
       id="acercade"
-      className="flex flex-col lg:flex-row justify-center items-center py-[100px] gap-8 px-8"
+      className="bg-[#F8FAFC] px-6 py-20 sm:px-8 sm:py-24"
     >
-      <div className="flex flex-col">
+      <div className="mx-auto flex max-w-[1080px] flex-col items-center text-center">
         <p
           data-aos="fade-up"
-          className="font-mono text-[#AF254F] text-[14px] tracking-[2px] "
+          className="font-mono text-[13px] font-semibold tracking-[0.2em] text-[#AF254F]"
         >
           {sobreNosotros.titulo}
         </p>
-        <div data-aos="fade-up" className="lg:max-w-[643px] pt-[10px] ">
-          <h3 className="font-sans font-semibold text-[#121212] text-[26px] xs:text-[28px] sm:text-[32px] lg:text-[40px]">
-            {sobreNosotros.subtitulo}
-          </h3>
-        </div>
-        <div className="lg:max-w-[392px] pt-[50px] space-y-[17px]">
+        <h2
+          data-aos="fade-up"
+          className="mt-4 max-w-[820px] font-sans text-[28px] font-bold leading-tight text-[#121212] sm:text-[36px] lg:text-[44px]"
+        >
+          {sobreNosotros.subtitulo}
+        </h2>
+        <div
+          data-aos="fade-up"
+          className="mt-6 h-1 w-20 rounded-full bg-[#AF254F]"
+        />
+        <div className="mt-12 grid w-full gap-5 text-left md:grid-cols-2">
           <p
             data-aos="fade-up"
-            className="font-mono font-light text-[#666666] text-[16px] sm:text-[18px]"
+            className="rounded-2xl border border-[#E5E7EB] border-t-2 border-t-[#AF254F] bg-white p-7 font-mono text-[15px] leading-7 text-[#525866] shadow-[0_12px_35px_rgba(15,23,42,0.04)] sm:p-9 sm:text-[16px]"
           >
             {sobreNosotros.descripcion1}
           </p>
           <p
             data-aos="fade-up"
-            className="font-mono font-light text-[#666666] text-[16px] sm:text-[18px]"
+            className="rounded-2xl border border-[#E5E7EB] border-t-2 border-t-[#AF254F] bg-white p-7 font-mono text-[15px] leading-7 text-[#525866] shadow-[0_12px_35px_rgba(15,23,42,0.04)] sm:p-9 sm:text-[16px]"
           >
             {sobreNosotros.descripcion2}
           </p>
         </div>
-      </div>
-      <div data-aos="fade-up" className="lg:pt-8">
-        <Image
-          src="/logo/services.png"
-          width={666}
-          height={575}
-          alt="services"
-          unoptimized
-          className="max-w-full h-auto"
-        />
       </div>
     </div>
   );

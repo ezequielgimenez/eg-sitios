@@ -15,14 +15,34 @@
       }
     ],
     "imagen": "/logo/hero.png",
-    "button": "Leer más"
+    "button": "Ver precios"
   },
   "nav": {
-    "inicio": "INICIO",
-    "servicios": "SERVICIOS",
+    "inicio": "Inicio",
+    "proceso": "Nuestro proceso",
+    "beneficios": "Beneficios",
+    "servicios": "Precios",
     "about": "SOBRE NOSOTROS",
-    "trabajos": "TRABAJOS",
-    "contacto": "CONTACTO"
+    "trabajos": "Trabajos",
+    "contacto": "Hablemos"
+  },
+  "procesoSection": {
+    "title": "NUESTRO PROCESO",
+    "subtitle": "Nuestro proceso de trabajo en 3 simples pasos",
+    "steps": [
+      {
+        "title": "Análisis y planificación",
+        "description": "Conocemos tu negocio, alineamos objetivos, estructura y funcionalidades que necesitás para definir la mejor solución digital."
+      },
+      {
+        "title": "Diseño y desarrollo",
+        "description": "Diseñamos y desarrollamos tu sitio o sistema a medida, adaptado a tu marca y pensado para atraer clientes y generar ventas."
+      },
+      {
+        "title": "Lanzamiento y acompañamiento",
+        "description": "Revisamos cada detalle, publicamos tu proyecto y te acompañamos para que puedas empezar a aprovecharlo."
+      }
+    ]
   },
 
   "services": {
@@ -46,10 +66,63 @@
       },
       {
         "img": "/icons/servicio4.png",
-        "titulo": "Web Gestionada",
-        "descripcion": "Servicio de web gestionada que incluye diseño del sitio, registro y renovación de dominio, hosting, mantenimiento continuo y soporte técnico."
+        "titulo": "Web y gestión comercial",
+        "descripcion": "Desarrollamos tu tienda online y, si lo necesitás, también podemos encargarnos de su gestión: administración de productos, actualización de precios, seguimiento de ventas y mantenimiento para que puedas enfocarte en hacer crecer tu negocio."
       }
     ],
+    "pricing": {
+      "title": "Precios que se adaptan a tu negocio",
+      "subtitle": "Conocé nuestras opciones y encontrá el servicio que mejor se ajuste a tus necesidades para impulsar tus ventas y hacer crecer tu negocio.",
+      "currencyLabel": "Precio en dólares",
+      "plans": [
+        {
+          "title": "Landing page",
+          "price": "100",
+          "buttonText": "Quiero mi web",
+          "href": "https://wa.link/3ejcuk",
+          "features": [
+            "1 página personalizada",
+            "Diseño adaptado a tu marca",
+            "Diseño responsive (celulares, tablets y PC)",
+            "Secciones estratégicas para tu negocio",
+            "Botones de contacto, formulario y WhatsApp",
+            "Optimizada para atraer clientes y generar consultas",
+            "Hosting incluido"
+          ]
+        },
+        {
+          "title": "Web Institucional",
+          "price": "200",
+          "buttonText": "Quiero mi web",
+          "href": "https://wa.link/r83ulq",
+          "features": [
+            "Sitio web de varias secciones",
+            "Diseño personalizado según tu marca",
+            "Adaptado a celulares y computadoras",
+            "Presentación de tu negocio y servicios",
+            "Sección de contacto y WhatsApp",
+            "Integración con redes sociales",
+            "Hosting incluido"
+          ]
+        },
+        {
+          "title": "Web a medida",
+          "price": "350",
+          "buttonText": "Agenda una llamada",
+          "href": "https://wa.link/j3kkkp",
+          "features": [
+            "Todo lo de una web institucional",
+            "Tienda online",
+            "Sitio inmobiliario",
+            "Chat con IA integrado",
+            "Funcionalidades a medida",
+            "Panel de administración personalizado",
+            "Base de datos propia",
+            "Herramientas de medición"
+          ]
+        }
+      ]
+    },
     "ctaTitle": "¿Listo para el siguiente nivel?",
     "ctaText": "Convertimos tus ideas en una experiencia digital clara y efectiva.",
     "ctaButton": "Contactar ahora"
@@ -58,7 +131,7 @@
     "titulo": "SOBRE NOSOTROS",
     "subtitulo": "Enfocados en crear soluciones web claras, modernas y adaptadas a cada necesidad.",
     "descripcion1": "Nuestro objetivo es interpretar de la mejor manera las ideas del cliente y asesorarlo sobre la implementación de las tecnologías que su proyecto o negocio necesita,  ya sea a través del desarrollo web o de sistemas a medida para optimizar procesos, mejorar la gestión del negocio y resolver necesidades específicas de cada cliente.",
-    "descripcion2": "Webkelar Digital nace como un proyecto de desarrollo web enfocado en acompañar a negocios, emprendedores y profesionales en la creación de su presencia digital."
+    "descripcion2": "Webkelar Digital nace como un proyecto de desarrollo web enfocado en acompañar a negocios, emprendedores y profesionales en la creación de su presencia digital. Nuestro objetivo va más allá de tener una página web: buscamos ayudarte a llegar a más personas, atraer nuevos clientes y generar más oportunidades de venta a través de soluciones digitales pensadas para hacer crecer tu negocio."
   },
   "incluye": {
     "titulo": "Todos nuestros trabajos",
@@ -77,7 +150,7 @@
       {
         "icon": "/icons-work/3.png",
         "title": "Dominio & Hosting",
-        "description": "Infraestructura de alta disponibilidad con servidores optimizados y gestión de dominio completa para que no te preocupes por nada."
+        "description": "Nos ocupamos del hosting y te acompañamos en la compra de tu dominio, para que tengas todo listo sin complicaciones."
       },
       {
         "icon": "/icons-work/4.png",

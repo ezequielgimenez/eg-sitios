@@ -15,14 +15,34 @@
       }
     ],
     "imagen": "/logo/hero.png",
-    "button": "Read more"
+    "button": "View prices"
   },
   "nav": {
     "inicio": "HOME",
+    "proceso": "OUR PROCESS",
+    "beneficios": "BENEFITS",
     "servicios": "SERVICES",
     "about": "ABOUT US",
     "trabajos": "WORKS",
     "contacto": "CONTACT"
+  },
+  "procesoSection": {
+    "title": "OUR PROCESS",
+    "subtitle": "Our work process in 3 simple steps",
+    "steps": [
+      {
+        "title": "Analysis and planning",
+        "description": "We get to know your business, align your goals, structure, and required features to define the best digital solution."
+      },
+      {
+        "title": "Design and development",
+        "description": "We design and build a custom website or system tailored to your brand and created to attract customers and drive sales."
+      },
+      {
+        "title": "Launch and ongoing support",
+        "description": "We review every detail, launch your project, and support you as you start making the most of it."
+      }
+    ]
   },
   "services": {
     "title": "What Do We Offer?",
@@ -45,10 +65,63 @@
       },
       {
         "img": "/icons/servicio4.png",
-        "titulo": "Managed Website",
-        "descripcion": "Managed website service that includes site design, domain registration and renewal, hosting, ongoing maintenance, and technical support."
+        "titulo": "Online Store and Business Management",
+        "descripcion": "We build your online store and, if you need it, can also manage it for you: product administration, price updates, sales tracking, and maintenance so you can focus on growing your business."
       }
     ],
+    "pricing": {
+      "title": "Pricing that fits your business",
+      "subtitle": "Explore our options and find the service that best fits your needs to boost sales and grow your business.",
+      "currencyLabel": "Price in US dollars",
+      "plans": [
+        {
+          "title": "Landing Page",
+          "price": "100",
+          "buttonText": "I want my website",
+          "href": "https://wa.link/3ejcuk",
+          "features": [
+            "1 custom page",
+            "Design tailored to your brand",
+            "Responsive design (mobile, tablet, and desktop)",
+            "Strategic sections for your business",
+            "Contact buttons, form, and WhatsApp",
+            "Optimized to attract clients and generate inquiries",
+            "Hosting included"
+          ]
+        },
+        {
+          "title": "Business Website",
+          "price": "200",
+          "buttonText": "I want my website",
+          "href": "https://wa.link/r83ulq",
+          "features": [
+            "Multi-section website",
+            "Custom design based on your brand",
+            "Adapted to mobile phones and computers",
+            "Showcase your business and services",
+            "Contact and WhatsApp section",
+            "Social media integration",
+            "Hosting included"
+          ]
+        },
+        {
+          "title": "Custom Website",
+          "price": "350",
+          "buttonText": "Schedule a call",
+          "href": "https://wa.link/j3kkkp",
+          "features": [
+            "Everything included in a business website",
+            "Online store",
+            "Real estate website",
+            "Integrated AI chat",
+            "Custom functionality",
+            "Custom administration panel",
+            "Dedicated database",
+            "Analytics tools"
+          ]
+        }
+      ]
+    },
     "ctaTitle": "Ready for the next level?",
     "ctaText": "We turn your ideas into a clear and effective digital experience.",
     "ctaButton": "Contact now"
@@ -57,7 +130,7 @@
     "titulo": "ABOUT US",
     "subtitulo": "Focused on creating clear, modern web solutions tailored to each need.",
     "descripcion1": "Our goal is to understand our clients’ ideas in the best possible way and guide them in choosing and implementing the technologies their project requires.",
-    "descripcion2": "Webkelar Digital was created as a web development project focused on supporting entrepreneurs and professionals in building their digital presence."
+    "descripcion2": "Webkelar Digital began as a web development project focused on supporting businesses, entrepreneurs, and professionals in building their digital presence. Our goal goes beyond simply having a website: we aim to help you reach more people, attract new clients, and generate more sales opportunities through digital solutions designed to grow your business."
   },
   "incluye": {
     "titulo": "All our work",
@@ -76,7 +149,7 @@
       {
         "icon": "/icons-work/3.png",
         "title": "Domain & Hosting",
-        "description": "High-availability infrastructure with optimized servers and full domain management, so you don’t have to worry about anything."
+        "description": "We take care of the hosting and assist you with the purchase of your domain, so that everything is ready for you without any complications."
       },
       {
         "icon": "/icons-work/4.png",

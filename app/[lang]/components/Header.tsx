@@ -10,8 +10,9 @@ type Props = {
 
   nav: {
     inicio: string;
+    proceso: string;
+    beneficios: string;
     servicios: string;
-    about: string;
     trabajos: string;
     contacto: string;
   };
@@ -113,17 +114,24 @@ export default function HeaderComp({ lang, nav }: Props) {
 
         <Link
           className="py-8 text-[22px] font-sans font-semibold text-white drop-shadow-[0px_0px_5px_rgba(197,75,140,1)]"
+          href="#proceso"
+          onClick={openNav}
+        >
+          {nav.proceso}
+        </Link>
+        <Link
+          className="py-8 text-[22px] font-sans font-semibold text-white drop-shadow-[0px_0px_5px_rgba(197,75,140,1)]"
+          href="#incluye"
+          onClick={openNav}
+        >
+          {nav.beneficios}
+        </Link>
+        <Link
+          className="py-8 text-[22px] font-sans font-semibold text-white drop-shadow-[0px_0px_5px_rgba(197,75,140,1)]"
           href="#servicios"
           onClick={openNav}
         >
           {nav.servicios}
-        </Link>
-        <Link
-          className="py-8 text-[22px] font-sans font-semibold text-white drop-shadow-[0px_0px_5px_rgba(197,75,140,1)]"
-          href={`/${lang}#acercade`}
-          onClick={openNav}
-        >
-          {nav.about}
         </Link>
         <Link
           className="py-8 text-[22px] font-sans font-semibold text-white drop-shadow-[0px_0px_5px_rgba(197,75,140,1)]"
@@ -168,20 +176,27 @@ export default function HeaderComp({ lang, nav }: Props) {
               <li>
                 <Link
                   className="font-nav font-normal text-[#E5E7EB] text-[14px] cursor-pointer hover:text-[#AF254F]/75 transition-colors duration-500 ease-in-out"
-                  href="#servicios"
+                  href="#proceso"
                 >
-                  {nav.servicios}
+                  {nav.proceso}
                 </Link>
               </li>
               <li>
                 <Link
                   className="font-nav font-normal text-[#E5E7EB] text-[14px] cursor-pointer hover:text-[#AF254F]/75 transition-colors duration-500 ease-in-out"
-                  href="#acercade"
+                  href="#incluye"
                 >
-                  {nav.about}
+                  {nav.beneficios}
                 </Link>
               </li>
-
+              <li>
+                <Link
+                  className="font-nav font-normal text-[#E5E7EB] text-[14px] cursor-pointer hover:text-[#AF254F]/75 transition-colors duration-500 ease-in-out"
+                  href="#servicios"
+                >
+                  {nav.servicios}
+                </Link>
+              </li>
               <li>
                 <Link
                   className="font-nav font-normal text-[#E5E7EB] text-[14px] cursor-pointer hover:text-[#AF254F]/75 transition-colors duration-500 ease-in-out"

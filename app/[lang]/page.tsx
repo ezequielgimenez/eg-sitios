@@ -3,6 +3,7 @@ import HeroSectionComp from "./components/Hero";
 import ServiciosComp from "./components/Servicios";
 import SobreNosotrosComp from "./components/AboutMe";
 import IncludesComp from "./components/Includes";
+import ProcessComp from "./components/Process";
 import WorksComp from "./components/Works";
 import ContactComp from "./components/Contact";
 
@@ -19,9 +20,10 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
     <div>
       <HeaderComp nav={content.nav} lang={lang} />
       <HeroSectionComp hero={content.hero} />
+      <ProcessComp process={content.procesoSection} />
+      <IncludesComp incluye={content.incluye} />
       <ServiciosComp services={content.services} />
       <SobreNosotrosComp sobreNosotros={content.sobreNosotros} />
-      <IncludesComp incluye={content.incluye} />
       <WorksComp tituloTrabajos={content.tituloTrabajos} />
       <ContactComp contacto={content.contacto} />
     </div>
