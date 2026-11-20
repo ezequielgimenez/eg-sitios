@@ -54,16 +54,15 @@ export default function ServiciosComp({ services }: Props) {
       {/* Cards */}
       <div
         data-aos="fade-up"
-        className="w-full max-w-[1440px] mx-auto flex items-center justify-center flex-wrap gap-[32px] pt-[73px] px-8"
+        className="w-full max-w-[1440px] mx-auto flex items-center justify-center flex-wrap gap-[32px] pt-[73px] px-4 sm:px-8"
       >
         {services.items.map((item, index) => (
           <div
             key={index}
             className="
               group
-              w-[350px]
-              md:w-[450px]
-              lg:w-[584px] h-[377px]
+              w-full max-w-[584px] min-w-0
+              min-h-[330px]
               rounded-[24px]
               bg-white
               border border-[#FF4BAB20]
@@ -79,7 +78,7 @@ export default function ServiciosComp({ services }: Props) {
               hover:shadow-2xl hover:shadow-[#AF254F]/20
             "
           >
-            <div className="flex flex-col w-[340px] md:w-[440px] lg:w-[502px] h-[295px] p-[40px]">
+            <div className="flex h-full min-w-0 flex-col p-6 sm:p-8 lg:p-10">
               {/* Icono */}
               <Image
                 src={item.img}
@@ -94,12 +93,12 @@ export default function ServiciosComp({ services }: Props) {
               />
 
               {/* Título */}
-              <h5 className="font-sans font-bold text-[24px] text-[#1C1F26] pt-8">
+              <h5 className="break-words pt-8 font-sans text-[24px] font-bold text-[#1C1F26]">
                 {item.titulo}
               </h5>
 
               {/* Descripción */}
-              <p className="font-manrope font-normal text-[#666666] text-[16px] md:text-[18px]  pt-4">
+              <p className="break-words pt-4 font-manrope text-[16px] font-normal text-[#666666] md:text-[18px]">
                 {item.descripcion}
               </p>
             </div>
